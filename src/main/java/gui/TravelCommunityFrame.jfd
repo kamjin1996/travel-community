@@ -1,0 +1,176 @@
+JFDML JFormDesigner: "7.0.0.6.255" Java: "11.0.4" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.autoExternalize": true
+	"i18n.bundleName": "mainJfram"
+	"i18n.keyPrefix": "TravelCommunityFrame"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {comp dialogPane:::p::p, space :0:64:x}, seq {par l {seq {space :p:61:p, comp flush:::p::p, space :p:60:p, comp addScenic:::p::p, space :p:36:p, comp deleteScenic:::p::p}, seq l {space :19:19:p, comp label5:::p::p, space :p:6:p, par l {seq {par t {comp label10::l:p::p, par l:t {comp label13:::p::p, comp label8:::p::p}}, space :::p, par l {seq {comp scenicNameText:::p:112:p, space :::p, comp label11:::p::p, space :p:114:p, comp label7:::p::p}, seq {par l:::p {comp selectXText::::111:x, comp selectYText::::111:x}, space s:::p, par l {comp label12:::p::p, comp label15::l:p::p}}}}, seq {comp label9:::p::p, space :p:14:p, comp selectMoneyText:::p:111:p, space u:::p, comp label14:::p::p}}}, seq l {par l {seq {space :p:19:p, comp label1:::p::p, space :::p}, seq t {space :::p, comp label4:::p::p, space :p:19:p}}, par l {comp zuiyouluxian:::p::p, seq {comp myPlaceScenic:::p:143:p, space u:::p, comp label16:::p::p, space s:::p, comp targetPlaceScenic:::p:175:p}}}}, space :::x}}"
+			"$verticalGroup": "par l {seq l {comp dialogPane:::p::p, par l {seq {space :p:29:p, comp label7:::p::p}, seq l {space s:::p, par b {comp label5::b:p::p, comp label11::b:p::p, comp label10::b:p::p, comp scenicNameText::b:p::p}}}, space :::p, par b {comp label8::b:p::p, comp label12::b:p::p, comp selectXText::b:p::p}, space :::p, par l {par b {comp label13::b:p::p, comp selectYText::b:p::p}, comp label15::t:p::p}, space :::p, par t {seq {comp label9:::p::p, space ::42:x, par b {comp label4::b:p::p, comp myPlaceScenic::b:p::p, comp label16::b:p::p, comp targetPlaceScenic::b:p::p}, space u:::p, comp label1:::p::p, space :p:7:p}, seq l {par b {comp label14::b:p::p, comp selectMoneyText::b:p::p}, space ::95:x}}, comp zuiyouluxian:::p::p, space :p:29:p, par b {comp flush::b:p::p, comp addScenic::b:p::p, comp deleteScenic::b:p::p}, space :p:55:p}}"
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {comp contentPanel:::p:563:p, space :0:22:x}}"
+				"$verticalGroup": "par l {comp contentPanel::l::379:x}"
+			} ) {
+				name: "dialogPane"
+				"border": new javax.swing.border.EmptyBorder( 12, 12, 12, 12 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq t {space :::p, par l {comp label3::l:p:40:p, comp scrollPane2:::::x}, space :::p, comp scenicTable:::p:516:p}}"
+					"$verticalGroup": "par l {seq l {space :::p, par l:::p {comp scenicTable::::0:x, seq {comp label3:::p::p, space :::p, comp scrollPane2:::p:356:p}}, space :p:19:p}}"
+				} ) {
+					name: "contentPanel"
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scenicTable"
+						add( new FormComponent( "javax.swing.JTable" ) {
+							name: "matrixTable"
+							"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector {
+								add( new java.util.Vector {
+									add( "0" )
+									add( "23" )
+									add( "8" )
+								} )
+								add( new java.util.Vector {
+									add( "12" )
+									add( "0" )
+									add( "19" )
+								} )
+								add( new java.util.Vector {
+									add( "56" )
+									add( "6" )
+									add( "0" )
+								} )
+							}, new java.util.Vector {
+								add( "景点1" )
+								add( "景点2" )
+								add( "景点3" )
+							}, new java.util.Vector {
+								add( class java.lang.String )
+								add( null )
+								add( class java.lang.String )
+							}, new java.util.Vector {
+								add( null )
+								add( null )
+								add( null )
+							}, new java.util.Vector {
+								add( null )
+								add( null )
+								add( null )
+							} )
+						} )
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane2"
+						add( new FormComponent( "javax.swing.JList" ) {
+							name: "scenicStrList"
+							"model": new javax.swing.DefaultListModel {
+								addElement( "景点1" )
+								addElement( "景点2" )
+								addElement( "景点3" )
+							}
+							auxiliary() {
+								"JavaCodeGenerator.typeParameters": "String"
+							}
+						} )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label3"
+						"text": new FormMessage( null, "TravelCommunityFrame.label3.text" )
+					} )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "flush"
+				"text": new FormMessage( null, "TravelCommunityFrame.flush.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "flushActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "addScenic"
+				"text": new FormMessage( null, "TravelCommunityFrame.addScenic.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "addScenicActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "deleteScenic"
+				"text": new FormMessage( null, "TravelCommunityFrame.deleteScenic.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "deleteScenicActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": new FormMessage( null, "TravelCommunityFrame.label1.text" )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "myPlaceScenic"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": new FormMessage( null, "TravelCommunityFrame.label4.text" )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": new FormMessage( null, "TravelCommunityFrame.label5.text" )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "scenicNameText"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label7"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label8"
+				"text": new FormMessage( null, "TravelCommunityFrame.label8.text" )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label9"
+				"text": new FormMessage( null, "TravelCommunityFrame.label9.text" )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label10"
+				"text": new FormMessage( null, "TravelCommunityFrame.label10.text" )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "selectXText"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "selectMoneyText"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label11"
+				"text": new FormMessage( null, "TravelCommunityFrame.label11.text" )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label12"
+				"text": new FormMessage( null, "TravelCommunityFrame.label12.text" )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label14"
+				"text": new FormMessage( null, "TravelCommunityFrame.label14.text" )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label13"
+				"text": new FormMessage( null, "TravelCommunityFrame.label13.text" )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "selectYText"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label15"
+				"text": new FormMessage( null, "TravelCommunityFrame.label15.text" )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "targetPlaceScenic"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label16"
+				"text": new FormMessage( null, "TravelCommunityFrame.label16.text" )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "zuiyouluxian"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 5 )
+			"size": new java.awt.Dimension( 675, 770 )
+		} )
+	}
+}
